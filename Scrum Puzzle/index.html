@@ -1,0 +1,114 @@
+<html>
+<head>
+	<!-- Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- Script Scrum Pluzze-->
+	<link href="style/style.css" rel="stylesheet" type="text/css" />
+	<!-- Fontes Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	<!-- Icon -->
+	<title>Scrum Puzzle</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="imagens/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imagens/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imagens/icon/favicon-16x16.png">
+	<link rel="manifest" href="imagens/icon/site.webmanifest">
+</head>
+<body>
+	<div id="container">
+		<div id="aviso" class="visible">
+			<p id="textoAviso">Esse usuário não é <br />adequado para isso</p>
+		</div>
+		<header id="escolherUsuario">
+			<form id="user">
+				<div>
+					<input id="radioPO" type="radio" name="usuario" value="PO"
+						   checked>
+					<label>Product Owner</label>
+				</div>
+
+				<div>
+					<input id="radioSM" type="radio" name="usuario" value="SM">
+					<label>Scrum Master</label>
+				</div>
+
+				<div>
+					<input id="radioTeam" type="radio" name="usuario" value="Team">
+					<label>Time de Desenvolvimento</label>
+				</div>
+			</form>
+		</header>
+
+		<section id="tabelaScrum">
+			<aside id="backlog">
+				<div id="cronometro">
+					<div id="play">
+						<img src="imagens/play.png" id="btnPlay" />
+					</div>
+					<div id="fail">
+						<img src="imagens/fail.png" id="btnPlay" />
+					</div>
+					<div id="pause">
+						<img src="imagens/pause.png" id="btnPause" />
+					</div>
+					<div id="check">
+						<img src="imagens/check.png" id="btnPause" />
+					</div>
+					<div id="timer">
+						<span id="textTimer">180</span>
+					</div>
+				</div>
+				<div id="backlogItens" ondrop="null" ondragover="allowDrop(event)">
+					<nav class="boxDesafio" id="boxDesafio1" draggable="true" ondragstart="drag(event)">Desafio 1</nav>
+					<nav class="boxDesafio" id="boxDesafio2" draggable="true" ondragstart="drag(event)">Desafio 2</nav>
+					<nav class="boxDesafio" id="boxDesafio3" draggable="true" ondragstart="drag(event)">Desafio 3</nav>
+				</div>
+			</aside>
+			<main id="tabela">
+				<div id="backlogSprint" ondrop="null" ondragover="allowDrop(event)">
+					<div class="title">backlog sprint</div>
+				</div>
+				<div id="execucao" ondrop="null" ondragover="allowDrop(event)">
+					<div class="title">execucao</div>
+				</div>
+				<div id="concluido" ondrop="null" ondragover="allowDrop(event)">
+					<div class="title">concluido</div>
+				</div>
+			</main>
+		</section>
+		<section id="desafios">
+			<section id="desafio1" class="desafio">
+				<div class="puzzle" id="puzzle1">
+					
+				</div>
+				<div class="modelo">
+					<div class="tituloDesafio">desafio 1<br />campus sbc</div>
+					<img src="imagens/desafio1/exemplo.png" height="150" />
+				</div>
+			</section>
+			<section id="desafio2" class="desafio">
+				<div class="puzzle" id="puzzle2">
+
+				</div>
+				<div class="modelo">
+					<div class="tituloDesafio">desafio 2<br />campus sa</div>
+					<img src="imagens/desafio2/exemplo.png" height="150" />
+				</div>
+			</section>
+			<section id="desafio3" class="desafio">
+				<div class="puzzle" id="puzzle3">
+
+				</div>
+				<div class="modelo">
+					<div class="tituloDesafio">desafio 3<br />Logo UFABC</div>
+					<img src="imagens/desafio3/exemplo.png" height="150" />
+				</div>
+			</section>
+		</section>
+	</div>
+	<script src="scripts/script.js"></script>
+
+</body>
+</html>

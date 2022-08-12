@@ -1,0 +1,185 @@
+body {
+	background-color: #f4e8e8;
+	font-size: 16px;
+	min-width: 1200px;
+}
+
+#aviso {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	font-size: .8em;
+	background-color: #FF6B6B;
+	color:white;
+	align-items: center;
+	justify-content: center;
+	border-radius:10px;
+	transition-duration:1s;
+	opacity:0;
+}
+	#aviso p {
+		align-self: start;
+		height: 50px;
+		line-height:20px;
+		margin-top:5px;
+		font-weight:bold;
+	}
+#escolherUsuario, #escolherUsuario form {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}
+	#escolherUsuario div {
+		margin: 30px;
+	}
+	#escolherUsuario input {
+		padding: 300px;
+		cursor: pointer;
+	}
+#tabelaScrum {
+	display: grid;
+	margin: 40px;
+	grid-template-columns: 1fr 3fr;
+	height: 400px;
+	column-gap:50px;
+}
+#backlog {
+	height: 400px;
+	background-color: #343233;
+}
+#cronometro {
+	width: 100%;
+	height: 80px;
+	color: #ccff04;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 2fr 2.4fr;
+	column-gap:20px;
+}
+#play{
+	display: flex;
+}
+#pause {
+	display: none;
+}
+#check {
+	display: none;
+}
+#fail {
+	display: none;
+}
+#play, #pause, #check, #fail {
+	height: 80px;
+	justify-content: end;
+	align-items: center;
+}
+	#play img, #pause img, #check img, #fail img {
+		height: 40%;
+	}
+#timer {
+	display: flex;
+	font-size: 3rem;
+	justify-content: start;
+	align-items: center;
+	font-family: 'Koulen', cursive;
+}
+#backlogItens {
+	height:320px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 10px;
+}
+#tabela {
+	height: 400px;
+	background-color: #339967;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+#backlogSprint, #execucao, #concluido{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	row-gap:20px;
+}
+.boxDesafio {
+	width: 200px;
+	height: 70px;
+	border-radius: 25px;
+	background-color: #fdff6b;
+	font-family: 'Koulen', cursive;
+	color: #343233;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+.isMoving {
+	z-index: 1001 !important;
+}
+.title {
+	padding: 10px;
+	color: white;
+	background-color: #333;
+	margin-top: -400px;
+	position: absolute;
+	font-family: 'Koulen', cursive;
+	font-size:1.2em;
+}
+
+#desafio1, #desafio2, #desafio3 {
+	display: none;
+}
+#desafios {
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.desafio {
+	background-color: #343233;
+	height: 300px;
+	width: 1000px;
+	display: grid;
+	margin: 40px;
+	justify-content: space-around;
+	align-items: center;
+	row-gap: 60px;
+	border-radius: 10px;
+}
+.puzzle{
+	width:540px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.puzzle img{
+	height:125px;
+	border: 1px solid white;
+}
+.modelo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	align-items: center;
+}
+	.modelo img {
+		border-radius: 10px;
+		height:150px;
+	}
+.tituloDesafio {
+	display: block;
+	padding: 5px;
+	text-align: center;
+	width: 150px;
+	color: white;
+	background-color: black;
+	font-family: 'Koulen', cursive;
+	font-size: 1.2em;
+}
